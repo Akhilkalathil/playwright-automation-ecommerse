@@ -1,7 +1,7 @@
 import {test,expect} from "@playwright/test"
 
 
-test ("Exercise 2: Validate Incorrect Login Credentials", async({page})=>
+test ("@smoke Exercise 2: Validate Incorrect Login Credentials", async({page})=>
 {
     // -ve Scenario 1
     await page.goto("/module-2/exercise-2");

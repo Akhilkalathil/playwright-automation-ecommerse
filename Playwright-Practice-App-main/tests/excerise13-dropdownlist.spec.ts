@@ -9,7 +9,9 @@ test ("Exercise 13: Handle Dropdown Lists" ,  async ({page})=>
         await dropdown.selectOption("Red");
         await expect(dropdown).toHaveValue("red");
 
-        await expect(page.locator("#standard-result")).toHaveText("You selected: red");
+        const stdresult = page.locator("#standard-result");
+
+        await expect(stdresult).toHaveText("You selected: red");
 
         const customdropdown =page.locator("#custom-dropdown-toggle");
 
@@ -21,4 +23,7 @@ test ("Exercise 13: Handle Dropdown Lists" ,  async ({page})=>
 
         await expect(customdropdown).toHaveText("Option C");
     }
+
+    
+
 )

@@ -1,6 +1,6 @@
 import {test, expect} from "@playwright/test"
 
-test ("Exercise 6: Filter Products by Category" ,  async ({page})=>
+test ("@smoke Exercise 6: Filter Products by Category" ,  async ({page})=>
     
     {
         await page.goto("module-3/exercise-6");
