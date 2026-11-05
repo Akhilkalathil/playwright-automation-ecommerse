@@ -1,1 +1,0 @@
-This is a sample downloaded file from the Playwright course application.
